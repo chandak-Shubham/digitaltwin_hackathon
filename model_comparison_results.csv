@@ -1,0 +1,16 @@
+dataset,model,cv_auc,best_params,accuracy,precision,recall,f1,roc_auc
+base,lightgbm,1.0,"{'learning_rate': 0.03, 'n_estimators': 300, 'num_leaves': 15}",1.0,1.0,1.0,1.0,0.9999999999999998
+base,lstm,0.9999921880423015,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 32, 'layers': 2, 'lr': 0.001}",1.0,1.0,1.0,1.0,1.0
+base,transformer,1.0,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 32, 'layers': 1, 'lr': 0.001}",0.9995,1.0,0.9921875,0.996078431372549,1.0
+sparse,lightgbm,0.98614138960927,"{'learning_rate': 0.08, 'n_estimators': 300, 'num_leaves': 31}",0.9925,1.0,0.8828125,0.9377593360995851,0.9962940705128205
+sparse,lstm,0.9892850107614498,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 64, 'layers': 1, 'lr': 0.001}",0.9965,0.9763779527559056,0.96875,0.9725490196078431,0.9963274572649573
+sparse,transformer,0.9856760242504395,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 64, 'layers': 2, 'lr': 0.001}",0.9985,0.9921259842519685,0.984375,0.9882352941176471,0.9940237713675214
+drift,lightgbm,1.0,"{'learning_rate': 0.03, 'n_estimators': 300, 'num_leaves': 15}",1.0,1.0,1.0,1.0,0.9999999999999999
+drift,lstm,0.9999984380466836,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 32, 'layers': 2, 'lr': 0.001}",1.0,1.0,1.0,1.0,1.0
+drift,transformer,1.0,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 32, 'layers': 1, 'lr': 0.001}",1.0,1.0,1.0,1.0,1.0
+propagation,lightgbm,0.9999867260610928,"{'learning_rate': 0.08, 'n_estimators': 300, 'num_leaves': 31}",0.9995,1.0,0.9921875,0.996078431372549,1.0
+propagation,lstm,0.9999961078048045,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 64, 'layers': 1, 'lr': 0.001}",1.0,1.0,1.0,1.0,1.0
+propagation,transformer,1.0,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 64, 'layers': 2, 'lr': 0.001}",1.0,1.0,1.0,1.0,1.0
+noisy,lightgbm,0.9955345703105604,"{'learning_rate': 0.08, 'n_estimators': 300, 'num_leaves': 15}",0.9935,0.9914529914529915,0.90625,0.9469387755102041,0.9896542801816239
+noisy,lstm,0.9947800562295157,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 32, 'layers': 1, 'lr': 0.001}",0.997,1.0,0.953125,0.976,0.9833233173076923
+noisy,transformer,0.9965328270355528,"{'batch': 64, 'dropout': 0.1, 'epochs': 8, 'hidden': 64, 'layers': 2, 'lr': 0.001}",0.997,1.0,0.953125,0.976,0.9904430422008546
